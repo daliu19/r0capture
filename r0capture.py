@@ -352,6 +352,8 @@ Examples:
                       help="if spawned app")
     args.add_argument("-wait", "-w", type=int, metavar="<seconds>", default=0,
                       help="Time to wait for the process")
+    args.add_argument("--deviceId", "-D", metavar="<device ID>", required=False,
+                      help="Device to choose") 
 
     parsed = parser.parse_args()
     ssl_log(
